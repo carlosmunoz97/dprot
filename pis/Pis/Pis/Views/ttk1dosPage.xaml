@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pis.Views.ttk1dosPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Configuración dos"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding ttk12}"
+            Padding="10,20,10,15">
+            <Image                
+                Source="tibial.png"
+                HeightRequest="250"
+                WidthRequest="250"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"></Image>
+            <ScrollView>
+                <Grid
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="CUENCA"
+                        FontSize="Default"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Text="SUSPENSIÓN"
+                        FontSize="Default"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="SISTEMA"
+                        FontSize="Default"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Text="INTERFACE"
+                        FontSize="Default"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="4"
+                        Text="PIE"
+                        FontSize="Default"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <StackLayout
+                        Grid.Column="1"
+                        Grid.Row="0">
+                        <Grid
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Column="0"
+                                Text="Contacto total"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand"></Label>
+                            <Button
+                                Grid.Column="1"
+                                Command="{Binding Alerta1Command}"
+                                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                Image="aclaracion.png"
+                                BackgroundColor="White"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"></Button>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout
+                        Grid.Column="1"
+                        Grid.Row="1">
+                        <Grid
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Column="0"
+                                Text="Pin y lanzadera"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand"></Label>
+                            <Button
+                                Grid.Column="1"
+                                Command="{Binding Alerta2Command}"
+                                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                Image="aclaracion.png"
+                                BackgroundColor="White"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"></Button>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout
+                        Grid.Column="1"
+                        Grid.Row="2">
+                        <Grid
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Column="0"
+                                Text="Exoesquelético modular"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand"></Label>
+                            <Button
+                                Grid.Column="1"
+                                Command="{Binding Alerta3Command}"
+                                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                Image="aclaracion.png"
+                                BackgroundColor="White"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"></Button>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout
+                        Grid.Column="1"
+                        Grid.Row="3">
+                        <Grid
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Column="0"
+                                Text="Silicona"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand"></Label>
+                            <Button
+                                Grid.Column="1"
+                                Command="{Binding Alerta4Command}"
+                                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                Image="aclaracion.png"
+                                BackgroundColor="White"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"></Button>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="4">
+                        <Grid
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    Text="Pie SACH, rígido o flexible(K2 en carbono)"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"></Label>
+                            <Button
+                                    Grid.Column="1"
+                                    Grid.Row="0"
+                                    Command="{Binding Alerta5Command}"
+                                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                    Image="aclaracion.png"
+                                    BackgroundColor="White"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="CenterAndExpand"></Button>
+                            <Label
+                                    Grid.Column="0"
+                                    Grid.Row="1"
+                                    Text="Pie    articulado    multiaxial   (K2 de   respuesta   dinámica   media)"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"></Label>
+                            <Button
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Command="{Binding Alerta6Command}"
+                                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                                    Image="aclaracion.png"
+                                    BackgroundColor="White"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="CenterAndExpand"></Button>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

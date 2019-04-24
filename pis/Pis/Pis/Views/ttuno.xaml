@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pis.Views.ttuno"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Transtibial K3"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding ttone}"
+            Padding="10,20,10,15">
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+                <Label
+                    Text="A continuación se presentan las principales"
+                    FontAttributes="Italic"
+                    HorizontalOptions="CenterAndExpand"></Label>
+                <Label
+                    Text="configuraciones para amputaciones transtibiales"
+                    FontAttributes="Italic"></Label>
+                <Label
+                    Text="en pacientes con un nivel de actividad K3"
+                    FontAttributes="Italic"></Label>
+            </StackLayout>
+            <ListView
+                        ItemsSource="{Binding Listatt2}"
+                        HasUnevenRows="True"
+                        IsPullToRefreshEnabled="True"
+                        IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
+                        RefreshCommand="{Binding RefreshCommand}"
+                        SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                    BackgroundColor="Silver"
+                                    CornerRadius="20"
+                                    HasShadow="True"
+                                    Margin="5">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SelectOption2Command}"></TapGestureRecognizer>
+                                </Frame.GestureRecognizers>
+                                <Grid>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Image
+                                            Grid.Column="0"
+                                            Source="{Binding Icon}"
+                                            WidthRequest="50"
+                                            HeightRequest="50">
+                                    </Image>
+                                    <Label
+                                            Grid.Column="1"
+                                            VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="CenterAndExpand"
+                                            Text="{Binding Title}"
+                                            TextColor="Black">
+                                    </Label>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

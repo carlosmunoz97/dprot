@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Pis.Views.MenuPage"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    Title="Menú"
+    BackgroundColor="White">    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                BackgroundColor="Navy"
+                Padding="5,20,5,5">
+                <Label
+                    Text="MENÜ"
+                    TextColor="White"
+                    BackgroundColor="Navy">
+                </Label>
+            </StackLayout>
+            <ListView
+                ItemsSource="{Binding Menus}"
+                HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding NavigateCommand}"></TapGestureRecognizer>
+                                </Grid.GestureRecognizers>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                    Source="{Binding Icon}"
+                                    WidthRequest="50"
+                                    HeightRequest="50"></Image>
+                                <Label
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"
+                                    TextColor="Black"
+                                    Text="{Binding Title}"></Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

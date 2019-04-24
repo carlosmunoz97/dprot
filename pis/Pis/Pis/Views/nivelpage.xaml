@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pis.Views.nivelpage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Nivel de actividad"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding nivel}">
+            <Label
+                VerticalOptions="CenterAndExpand"
+                FontAttributes="Italic"
+                FontSize="Medium"
+                HorizontalOptions="CenterAndExpand"
+                Text="Seleccione el nivel de actividad que presente el paciente cotidianamente, teniendo en cuenta que los niveles K1/K2 implican un bajo nivel de actividad o desplazamiento moderado y que los niveles K3/K4 implican actividades más complejas y de mayor rendimiento."
+                Margin="10"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center">
+            </Label>
+            <StackLayout
+                Margin="10,0"
+                Orientation="Vertical"
+                VerticalOptions="StartAndExpand">
+                <Button
+                    Command="{Binding UnoCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    HorizontalOptions="FillAndExpand"
+                    Text="K1"
+                    BorderRadius="23"
+                    BackgroundColor="Purple"
+                    TextColor="White">
+                </Button>
+                <Button
+                    Command="{Binding DosCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    HorizontalOptions="FillAndExpand"
+                    Text="K2"
+                    BorderRadius="23"
+                    BackgroundColor="Purple"
+                    TextColor="White">
+                </Button>
+                <Button
+                    Command="{Binding TresCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    HorizontalOptions="FillAndExpand"
+                    Text="K3"
+                    BorderRadius="23"
+                    BackgroundColor="Purple"
+                    TextColor="White">
+                </Button>
+                <Button
+                    Command="{Binding CuatroCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    HorizontalOptions="FillAndExpand"
+                    Text="K4"
+                    BorderRadius="23"
+                    BackgroundColor="Purple"
+                    TextColor="White">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

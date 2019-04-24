@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pis.Views.fracturaspage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Nivel de Amputación"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+            BindingContext="{Binding fracturas}">
+                <Image
+                Source="nivel"
+                WidthRequest="500"
+                VerticalOptions="CenterAndExpand">
+                </Image>
+                <Label
+                Text="Seleccione el nivel de amputación."
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand"
+                FontSize="Medium"
+                FontAttributes="Italic">
+                </Label>
+                <StackLayout
+                Margin="5,0"
+                VerticalOptions="StartAndExpand">
+                    <Button
+                    Command="{Binding PieCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"    
+                    Text="Parcial de pie"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    BackgroundColor="DeepSkyBlue"
+                    TextColor="White">
+                    </Button>
+                    <Button   
+                    Command="{Binding TranstibialCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    Text="Transtibial"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    BackgroundColor="RoyalBlue"
+                    TextColor="White">
+                    </Button>
+                    <Button  
+                    Command="{Binding DesarticuladoCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    Text="Desarticulado de rodilla"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    BackgroundColor="DarkBlue"
+                    TextColor="White">
+                    </Button>
+                    <Button  
+                    Command="{Binding RodillaCommand}"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    Text="Transfemoral"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    BackgroundColor="MidnightBlue"
+                    TextColor="White">
+                    </Button>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

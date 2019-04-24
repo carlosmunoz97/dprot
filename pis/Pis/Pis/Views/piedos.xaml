@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pis.Views.piedos"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Parcial de pie K3/K4"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding piedos}">
+            <Image                
+                Source="pie.png"
+                HeightRequest="250"
+                WidthRequest="250"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"></Image>
+            <Grid
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Column="0"
+                    Text="PIE"
+                    FontSize="Default"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                </Label>
+                <StackLayout
+                    Grid.Column="1">
+                    <Grid
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Text="Pie articulado multiaxial de respuesta dinámica alta (en carbono)"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"></Label>
+                        <Button
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            Command="{Binding Alerta1Command}"
+                            IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                            Image="aclaracion.png"
+                            BackgroundColor="White"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"></Button>
+                        </Grid>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
