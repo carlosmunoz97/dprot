@@ -14,9 +14,9 @@
             {
                 return new RelayCommand(SelectOption);
             }
-            #endregion
+            
         }
-
+        #endregion
         private async void SelectOption()
         {
             if (PageName == "ttk1unoPage")
