@@ -8,9 +8,57 @@
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding nosotros}">
-            <Label Text="Acerca de nosotros"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image
+                Source="DPROT1"
+                WidthRequest="300"
+                VerticalOptions="CenterAndExpand">
+            </Image>
+            <StackLayout
+                VerticalOptions="CenterAndExpand">
+                <Label
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Text="Esta aplicación fue desarrollada por:"
+                FontAttributes="Italic">
+                </Label>
+                <Label
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Text="Carlos José Muñoz Cabrera"
+                TextColor="Black"
+                FontAttributes="Italic">
+                </Label>
+                <Label
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Text="Gabriela Portilla Castro"
+                TextColor="Black"
+                FontAttributes="Italic">
+                </Label>
+                <Label
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Text="Esteban Mauricio Lopez Benavides"
+                TextColor="Black"
+                FontAttributes="Italic">
+                </Label>
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand">
+                <Label
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Text="Asesorados por:"
+                FontAttributes="Italic">
+                </Label>
+                <Label
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Text="Sofia Catalina Henao Aguirre"
+                TextColor="Black"
+                FontAttributes="Italic">
+                </Label>
+            </StackLayout>            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
