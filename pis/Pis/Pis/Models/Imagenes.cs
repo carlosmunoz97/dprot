@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Pis.Models
 {
-    class Imagenes
+    public class Imagenes
     {
         #region Properties
-        public string Icon { get; set; }
+        public string Image { get; set; }
+        public string Description { get; set; }
         public string Title { get; set; }
         #endregion
     }

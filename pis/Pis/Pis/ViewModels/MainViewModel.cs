@@ -28,6 +28,11 @@ namespace Pis.ViewModels
             set;
         }
 
+        public ImagenViewModel image
+        {
+            get;
+            set;
+        }
         public fotosViewModel fotos
         {
             get;
