@@ -174,6 +174,47 @@ namespace Pis.ViewModels
                     Title = "Pie articulado"
                 });
             }
+        
+            if (varGlobal.img == "fibradecarbono")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Diseño de contención isquiática (ovoidea)",
+                    Title = "Fibra de carbono"
+                });
+            }
+
+            if (varGlobal.img == "policentrica")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Rodilla neumática o hidráulica con control de fluidos",
+                    Title = "Policéntrica con control de fluidos"
+                });
+            }
+
+            if (varGlobal.img == "monocentrica")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Monocéntrica con control de fluidos y sistema rotatorio",
+                    Title = "Monocéntrica con control de fluidos"
+                });
+            }
+
+            if (varGlobal.img == "piecarbono")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Pie articulado de respuesta dinámica alta y resistencia moderada  (pie en carbono de alta resistencia y alto impacto para un K4)",
+                    Title = "Pie articulado"
+                });
+            }
+
 
             this.IsRefreshing = false;
         }
