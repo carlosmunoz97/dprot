@@ -33,11 +33,7 @@ namespace Pis.ViewModels
             get;
             set;
         }
-        public fotosViewModel fotos
-        {
-            get;
-            set;
-        }
+        
 
         public fracturasViewModel fracturas
         {
@@ -247,12 +243,7 @@ namespace Pis.ViewModels
                 Title = "Prescripción"
             });
 
-            this.Menus.Add(new MenuItemViewModel
-            {
-                Icon = "ic_camera_alt.png",
-                PageName = "fotosPage",
-                Title = "Galeria"
-            });
+            
 
             this.Menus.Add(new MenuItemViewModel
             {

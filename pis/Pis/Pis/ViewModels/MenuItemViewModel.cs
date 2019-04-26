@@ -31,11 +31,7 @@ namespace Pis.ViewModels
                 await App.Navigator.PushAsync( new fracturaspage());
             }
 
-            if (this.PageName == "fotosPage")
-            {
-                MainViewModel.GetInstance().fotos = new fotosViewModel();
-                await App.Navigator.PushAsync( new fotosPage());
-            }
+            
 
             if (this.PageName == "nosotrosPage")
             {
