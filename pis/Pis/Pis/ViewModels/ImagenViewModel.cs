@@ -145,6 +145,36 @@ namespace Pis.ViewModels
                 });
             }
 
+            if (varGlobal.img == "poliuretano")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Interface hecha de poliuretano",
+                    Title = "Poliuretano"
+                });
+            }
+
+            if (varGlobal.img == "articulado alta")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Pie articulado de respuesta dinámica alta",
+                    Title = "Pie articulado"
+                });
+            }
+
+            if (varGlobal.img == "resalta")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Pie articulado de respuesta dinámica alta con resistencia alta, en carbono",
+                    Title = "Pie articulado"
+                });
+            }
+
             this.IsRefreshing = false;
         }
         #endregion

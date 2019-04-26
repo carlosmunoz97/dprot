@@ -5,6 +5,7 @@ using System.Text;
 namespace Pis.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
+    using Pis.Views;
     using System.Windows.Input;
     using Xamarin.Forms;
     public class ttk2unoViewModel : BaseViewModel
@@ -62,7 +63,7 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
-
+            //no está
             await Application.Current.MainPage.DisplayAlert(
                 "Contacto total",
                 "Toda el área del muñón en contacto con las paredes (su extremo distal puede ser blando o rígido)",
@@ -72,42 +73,62 @@ namespace Pis.ViewModels
         private async void alerta2()
         {
             this.isEnabled = true;
+            this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "pin";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pin y lanzadera",
-                "Se usa un liner con pin asegurado por una lanzadera en su parte inferior para mayor sujeción",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pin y lanzadera",
+            //    "Se usa un liner con pin asegurado por una lanzadera en su parte inferior para mayor sujeción",
+            //    "aceptar");
+            //return;
         }
         private async void alerta3()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "modular";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Exoesquelético modular",
-                "Se usan componentes intercambiables estandarizados hechos de acero (pesado y de mayor resistencia) o titanio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Exoesquelético modular",
+            //    "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "silicona";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Silicona",
-                "Interface hecha de silicona",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Silicona",
+            //    "Interface hecha de silicona",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "articulado alta";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado",
-                "Pie articulado de respuesta dinámica alta",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado de respuesta dinámica alta",
+            //    "aceptar");
+            //return;
         }
         #endregion
 
