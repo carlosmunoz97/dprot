@@ -9,6 +9,7 @@ namespace Pis.ViewModels
         #region Atributes
         private ObservableCollection<ImagenesViewModel> listai;
         private bool isRefreshing;
+        private bool isEnabled;
         #endregion
 
         #region Properties
@@ -23,11 +24,17 @@ namespace Pis.ViewModels
             get { return this.isRefreshing; }
             set { SetValue(ref this.isRefreshing, value); }
         }
+        public bool IsEnabled
+        {
+            get { return this.isEnabled; }
+            set { SetValue(ref this.isEnabled, value); }
+        }
         #endregion
 
         #region Constructors
         public ImagenViewModel()
         {
+            this.IsEnabled = true;
             this.LoadListai();
         }
         #endregion
@@ -36,21 +43,32 @@ namespace Pis.ViewModels
         private void LoadListai()
         {
             this.IsRefreshing = true;
+            this.IsEnabled = true;
             this.Listai = new ObservableCollection<ImagenesViewModel>();
-            if (varGlobal.img == )
+            if (varGlobal.img == "sach")
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
                     Image = "uno.png",
-                    Description = "tfk3unoPage",
-                    Title = "Primera opción"
+                    Description = "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
+                    Title = "Pie SACH"
                 });
             }
-            
 
-            
+            if (varGlobal.img == "articulado")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Pie articulado uniaxial en aluminio o titanio",
+                    Title = "Pie articulado"
+                });
+            }
 
-            
+
+
+
+
             this.IsRefreshing = false;
         }
         #endregion
