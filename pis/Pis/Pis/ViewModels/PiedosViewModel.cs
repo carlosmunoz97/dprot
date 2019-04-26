@@ -4,6 +4,7 @@ using System.Text;
 using GalaSoft.MvvmLight.Command;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Pis.Views;
 
 
 namespace Pis.ViewModels
@@ -36,12 +37,17 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "multiaxial";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado multiaxial de respuesta dinámica",
-                "Pie articulado multiaxial de respuesta dinámica alta (en carbono, con resistencia definida por el técnico)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado multiaxial de respuesta dinámica",
+            //    "Pie articulado multiaxial de respuesta dinámica alta (en carbono, con resistencia definida por el técnico)",
+            //    "aceptar");
+            //return;
         }
         
         #endregion

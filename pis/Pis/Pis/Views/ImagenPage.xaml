@@ -34,7 +34,9 @@
                                         VerticalOptions="CenterAndExpand"
                                         HorizontalOptions="CenterAndExpand"
                                         Text="{Binding Title}"
-                                        TextColor="Black">
+                                        TextColor="Black"
+                                        FontSize="Large"
+                                        FontAttributes="Bold">
                                     </Label>
                                     <Image
                                             Grid.Row="1"
@@ -43,10 +45,11 @@
                                             HeightRequest="300">
                                     </Image>
                                     <Label
-                                            Grid.Column="2"
+                                            Grid.Row="2"
                                             VerticalOptions="CenterAndExpand"
                                             HorizontalOptions="CenterAndExpand"
-                                            Text="{Binding Description}">
+                                            Text="{Binding Description}"
+                                        FontAttributes="Italic">
                                     </Label>
                                 </Grid>
                             </Frame>

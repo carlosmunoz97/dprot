@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Pis.Views;
 
 namespace Pis.ViewModels
 {
@@ -61,52 +62,77 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "ptb";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Encaje de apoyo en el tendón rotuliano (PTB)",
-                "Encaje hecho de plástico laminado termoformado que proporciona una adaptación íntima sobre la superficie del muñón, incluyendo el extremo distal.",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Encaje de apoyo en el tendón rotuliano (PTB)",
+            //    "Encaje hecho de plástico laminado termoformado que proporciona una adaptación íntima sobre la superficie del muñón, incluyendo el extremo distal.",
+            //    "aceptar");
+            //return;
         }
         private async void alerta2()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "supracondilea";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Correa suprancondilea",
-                "Sujeta al encaje en las áreas posteromedial y posterolateral, envuelve el muslo por encima de los epicóndilos y la rótula",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Correa suprancondilea",
+            //    "Sujeta al encaje en las áreas posteromedial y posterolateral, envuelve el muslo por encima de los epicóndilos y la rótula",
+            //    "aceptar");
+            //return;
         }
         private async void alerta3()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "modular";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Exoesquelético modular",
-                "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Exoesquelético modular",
+            //    "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "sach";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie SACH",
-                "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles, para el caso de un K2 se usa un SACH en carbono",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie SACH",
+            //    "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles, para el caso de un K2 se usa un SACH en carbono",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "articulado";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado",
-                "Pie articulado uniaxial en aluminio o titanio, para el caso de un K2 se usa un pie de respuesta dinámica media",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado uniaxial en aluminio o titanio, para el caso de un K2 se usa un pie de respuesta dinámica media",
+            //    "aceptar");
+            //return;
         }
         #endregion
 

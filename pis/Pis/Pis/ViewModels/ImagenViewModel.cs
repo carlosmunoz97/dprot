@@ -65,9 +65,85 @@ namespace Pis.ViewModels
                 });
             }
 
+            if (varGlobal.img == "multiaxial")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Pie articulado multiaxial de respuesta dinámica alta (en carbono, con resistencia definida por el técnico)",
+                    Title = "Pie articulado multiaxial de respuesta dinámica"
+                });
+            }
 
+            if (varGlobal.img == "ptb")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Encaje hecho de plástico laminado termoformado que proporciona una adaptación íntima sobre la superficie del muñón, incluyendo el extremo distal.",
+                    Title = "Encaje de apoyo en el tendón rotuliano (PTB)"
+                });
+            }
 
+            if (varGlobal.img == "supracondilea")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Sujeta al encaje en las áreas posteromedial y posterolateral, envuelve el muslo por encima de los epicóndilos y la rótula",
+                    Title = "Correa suprancondilea"
+                });
+            }
 
+            if (varGlobal.img == "modular")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
+                    Title = "Exoesquelético modular"
+                });
+            }
+
+            if (varGlobal.img == "pin")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Se usa un liner con pin asegurado por una lanzadera en su parte inferior para mayor sujeción",
+                    Title = "Pin y lanzadera"
+                });
+            }
+
+            if (varGlobal.img == "silicona")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Interface hecha de silicona",
+                    Title = "Silicona"
+                });
+            }
+
+            if (varGlobal.img == "vacio")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Se usa en pacientes con buena musculatura y fuerza, ofrece mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
+                    Title = "Válvula de vacío"
+                });
+            }
+
+            if (varGlobal.img == "copolimero")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Interface hecha de copolímero",
+                    Title = "Copolímero"
+                });
+            }
 
             this.IsRefreshing = false;
         }

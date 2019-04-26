@@ -5,6 +5,7 @@ using System.Text;
 namespace Pis.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
+    using Pis.Views;
     using System.Windows.Input;
     using Xamarin.Forms;
     public class ttk1tresViewModel : BaseViewModel
@@ -76,7 +77,7 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
-
+            //no está
             await Application.Current.MainPage.DisplayAlert(
                 "Contacto total",
                 "Toda el área del muñón en contacto con las paredes (su extremo distal puede ser blando o rígido)",
@@ -86,62 +87,92 @@ namespace Pis.ViewModels
         private async void alerta2()
         {
             this.isEnabled = true;
-
-            await Application.Current.MainPage.DisplayAlert(
-                "Pin y lanzadera",
-                "Se usa un liner con pin asegurado por una lanzadera en su parte inferior para mayor sujeción",
-                "aceptar");
-            return;
+            this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "pin";
+            
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pin y lanzadera",
+            //    "Se usa un liner con pin asegurado por una lanzadera en su parte inferior para mayor sujeción",
+            //    "aceptar");
+            //return;
         }
         private async void alerta3()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "vacio";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Válvula de vacío",
-                "Se usa en pacientes con buena musculatura y fuerza, ofrece mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+            
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Válvula de vacío",
+            //    "Se usa en pacientes con buena musculatura y fuerza, ofrece mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "modular";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Exoesquelético modular",
-                "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Exoesquelético modular",
+            //    "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "copolimero";
+            
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Copolímero",
-                "Interface hecha de copolímero",
-                "aceptar");
-            return;
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Copolímero",
+            //    "Interface hecha de copolímero",
+            //    "aceptar");
+            //return;
         }
         private async void alerta6()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "sach";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie SACH",
-                "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles, para el caso de un K2 se usa un SACH en carbono",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie SACH",
+            //    "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles, para el caso de un K2 se usa un SACH en carbono",
+            //    "aceptar");
+            //return;
         }
         private async void alerta7()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "articulado";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado",
-                "Pie articulado uniaxial en aluminio o titanio, para el caso de un K2 se usa un pie de respuesta dinámica media",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado uniaxial en aluminio o titanio, para el caso de un K2 se usa un pie de respuesta dinámica media",
+            //    "aceptar");
+            //return;
         }
         #endregion
 
