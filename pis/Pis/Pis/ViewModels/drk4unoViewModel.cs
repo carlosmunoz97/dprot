@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using Pis.Views;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -65,27 +66,37 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "fibradecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-               "Fibra de carbono",
-                "Diseño de contención isquiática (ovoidea)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Fibra de carbono",
+            //   "Diseño de contención isquiática (ovoidea)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta2()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "vacio";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Válvula de vacío",
-                "Se usa en pacientes con buena fuerza y musculatura ya que genera mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Válvula de vacío",
+            //    "Se usa en pacientes con buena musculatura y fuerza, ofrece mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta3()
         {
             this.isEnabled = true;
-
+            //noshta 
             await Application.Current.MainPage.DisplayAlert(
                  "Encaje flexible",
                 "Se usa con el fin de distribuir la presión en el muñón",
@@ -95,17 +106,22 @@ namespace Pis.ViewModels
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "monocentrica";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Monocéntrica con control de fluidos",
-                "Rodilla con control de fluidos rotatorio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Monocéntrica con control de fluidos",
+            //    "Monocéntrica con control de fluidos y sistema rotatorio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
-
+            //noshta 
             await Application.Current.MainPage.DisplayAlert(
                 "Titanio o acero ",
                 "Se usan componentes intercambiables estandarizados hechos de acero o titanio",
@@ -115,12 +131,16 @@ namespace Pis.ViewModels
         private async void alerta6()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "piecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado",
-                "Pie articulado en carbono de respuesta dinámica alta, resistencia alta y alto impacto",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado de respuesta dinámica alta y resistencia moderada  (pie en carbono de alta resistencia y alto impacto para un K4)",
+            //    "aceptar");
         }
         #endregion
 

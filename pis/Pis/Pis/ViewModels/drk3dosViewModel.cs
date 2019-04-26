@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using Pis.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -68,17 +69,22 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "fibradecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-               "Fibra de carbono",
-                "Diseño de contención isquiática (ovoidea)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Fibra de carbono",
+            //   "Diseño de contención isquiática (ovoidea)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta2()
         {
             this.isEnabled = true;
-
+            //noshta 
             await Application.Current.MainPage.DisplayAlert(
                 "Válvula de vacío con anillo",
                 "Expulsa el aire residual automáticamente, evita el hecho de que se haga manualmente",
@@ -88,7 +94,7 @@ namespace Pis.ViewModels
         private async void alerta3()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Copolímero o silicona",
                 "Interface hecha de copolímero o silicona",
@@ -98,17 +104,22 @@ namespace Pis.ViewModels
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "policentrica";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Policéntrica con control de fluidos",
-                "Rodilla hidráulica con control de fluidos",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //   "Policéntrica con control de fluidos",
+            //    "Rodilla neumática o hidráulica con control de fluidos",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Titanio o acero ",
                 "Se usan componentes intercambiables estandarizados hechos de acero o titanio",
@@ -118,12 +129,16 @@ namespace Pis.ViewModels
         private async void alerta6()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "piecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado",
-                "Pie articulado de respuesta dinámica alta y resistencia moderada",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado de respuesta dinámica alta y resistencia moderada  (pie en carbono de alta resistencia y alto impacto para un K4)",
+            //    "aceptar");
         }
         #endregion
 
