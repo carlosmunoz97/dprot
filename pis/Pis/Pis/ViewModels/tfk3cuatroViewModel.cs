@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using Pis.Views;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -72,17 +73,22 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "fibradecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Fibra de carbono",
-                "Diseño de contenCión isquiátIca (ovoidea)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Fibra de carbono",
+            //   "Diseño de contención isquiática (ovoidea)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta2()
         {
             this.isEnabled = true;
-
+            //no eshta
             await Application.Current.MainPage.DisplayAlert(
                 "Correas adhesivas",
                 "Pueden ir acompañadas de correas como el cinturón pélvico",
@@ -92,37 +98,52 @@ namespace Pis.ViewModels
         private async void alerta3()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "silicona";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Silicona",
-                "Interface hecha en silicona",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Silicona",
+            //    "Interface hecha de silicona",
+            //    "aceptar");
+            //return;
         }
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "policentrica";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Policéntrica con control de fluidos",
-                "Rodilla neumática o hidráulica con control de fluidos",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //   "Policéntrica con control de fluidos",
+            //    "Rodilla neumática o hidráulica con control de fluidos",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "monocentrica";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Monocéntrica con control de fluidos",
-                "Monocéntrica con control de fluidos y sistema rotatorio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Monocéntrica con control de fluidos",
+            //    "Monocéntrica con control de fluidos y sistema rotatorio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta6()
         {
             this.isEnabled = true;
-
+            //no etsiste 
             await Application.Current.MainPage.DisplayAlert(
                 "Titanio o acero ",
                 "Se usan componentes intercambiables estandarizados hechos de acero o titanio",
@@ -132,12 +153,16 @@ namespace Pis.ViewModels
         private async void alerta7()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "piecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado",
-                "Pie articulado de respuesta dinámica alta y resistencia moderada  (pie en carbono de alta resistencia y alto impacto para un K4)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado de respuesta dinámica alta y resistencia moderada  (pie en carbono de alta resistencia y alto impacto para un K4)",
+            //    "aceptar");
         }
         #endregion
 

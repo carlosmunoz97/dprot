@@ -5,6 +5,7 @@ using Xamarin.Forms;
 namespace Pis.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
+    using Pis.Views;
     using System.Windows.Input;
     using Xamarin.Forms;
 
@@ -76,7 +77,7 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Polipropileno",
                 "Encaje que proporciona una adaptación íntima sobre la superficie del muñón, para mejorar los puntos de presión",
@@ -86,7 +87,7 @@ namespace Pis.ViewModels
         private async void alerta2()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Válvula de vacío con anillo",
                 "Expulsa el aire residual automáticamente, evita el hecho de que se haga manualmente",
@@ -96,27 +97,37 @@ namespace Pis.ViewModels
         private async void alerta3()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "silicona";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Liner de silicona",
-                "Interface hecha de silicona",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Silicona",
+            //    "Interface hecha de silicona",
+            //    "aceptar");
+            //return;
         }
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "monocentricafreno";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Monocéntrica de bloqueo automático",
-                "Hecha de aluminio con desbloqueo manual",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Monocéntrica de freno a la carga",
+            //    "Hecha de aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Aluminio o titanio",
                 "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
@@ -126,22 +137,31 @@ namespace Pis.ViewModels
         private async void alerta6()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "sach";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie SACH, rígido o flexible",
-                "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+            //await Application.Current.MainPage.DisplayAlert(
+            // "Pie SACH",
+            //"Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
+            //"aceptar");
+            //return;
         }
         private async void alerta7()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "articulado";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado uniaxial",
-                "Pie articulado uniaxial en aluminio o titanio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado uniaxial en aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         #endregion
 

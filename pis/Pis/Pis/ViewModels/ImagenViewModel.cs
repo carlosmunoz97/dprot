@@ -215,6 +215,25 @@ namespace Pis.ViewModels
                 });
             }
 
+            if (varGlobal.img == "monocentricafreno")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Hecha de aluminio o titanio",
+                    Title = "Monocéntrica de freno a la carga"
+                });
+            }
+            if (varGlobal.img == "piemedio")
+            {
+                this.Listai.Add(new ImagenesViewModel
+                {
+                    Image = "uno.png",
+                    Description = "Pie articulado en carbono de respuesta dinámica media",
+                    Title = "Pie articulado de respuesta dinámica"
+                });
+            }
+
 
             this.IsRefreshing = false;
         }

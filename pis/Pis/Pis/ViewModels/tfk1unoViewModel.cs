@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using Pis.Views;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -72,27 +73,37 @@ namespace Pis.ViewModels
         private async void alerta1()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "fibradecarbono";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Fibra de carbono",
-                "Diseño cuadrilátero o de contención isquiática (ovoidea)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Fibra de carbono",
+            //   "Diseño de contención isquiática (ovoidea)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta2()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "vacio";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Válvula de vacío",
-                "Se usa en pacientes con buena fuerza y musculatura ya que genera mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Válvula de vacío",
+            //    "Se usa en pacientes con buena musculatura y fuerza, ofrece mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
+            //    "aceptar");
+            //return;
         }
         private async void alerta3()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Encaje flexible",
                 "Se usa con el fin de distribuir la presión en el muñón",
@@ -102,17 +113,22 @@ namespace Pis.ViewModels
         private async void alerta4()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "monocentricafreno";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Monocéntrica de bloqueo automático",
-                "Hecha de aluminio con desbloqueo manual",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Monocéntrica de freno a la carga",
+            //    "Hecha de aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         private async void alerta5()
         {
             this.isEnabled = true;
-
+            //noshta
             await Application.Current.MainPage.DisplayAlert(
                 "Aluminio o titanio",
                 "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
@@ -122,22 +138,31 @@ namespace Pis.ViewModels
         private async void alerta6()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "sach";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie SACH, rígido o flexible",
-                "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+            //await Application.Current.MainPage.DisplayAlert(
+            // "Pie SACH",
+            //"Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
+            //"aceptar");
+            //return;
         }
         private async void alerta7()
         {
             this.isEnabled = true;
+            varGlobal varGlobal = new varGlobal();
+            varGlobal.img = "articulado";
 
-            await Application.Current.MainPage.DisplayAlert(
-                "Pie articulado uniaxial",
-                "Pie articulado uniaxial en aluminio o titanio",
-                "aceptar");
-            return;
+            MainViewModel.GetInstance().image = new ImagenViewModel();
+            await App.Navigator.PushAsync(new ImagenPage());
+
+            //await Application.Current.MainPage.DisplayAlert(
+            //    "Pie articulado",
+            //    "Pie articulado uniaxial en aluminio o titanio",
+            //    "aceptar");
+            //return;
         }
         #endregion
 
