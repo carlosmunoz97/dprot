@@ -217,4 +217,64 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_tibial.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\adhesivas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\carbono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\copolimero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\correasupra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\exomodular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lanzadera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\modular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\monocentrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\piealta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\piemultiaxial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pieuniaxial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\policentrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\polipropileno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\poliuretano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ptb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\silicona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\supracondilea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vacio.png" />
+  </ItemGroup>
 </Project>

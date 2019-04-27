@@ -49,7 +49,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "sach.png",
                     Description = "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
                     Title = "Pie SACH"
                 });
@@ -59,7 +59,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "pieuniaxial.png",
                     Description = "Pie articulado uniaxial en aluminio o titanio",
                     Title = "Pie articulado"
                 });
@@ -69,7 +69,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "piemultiaxial.png",
                     Description = "Pie articulado multiaxial de respuesta dinámica alta (en carbono, con resistencia definida por el técnico)",
                     Title = "Pie articulado multiaxial de respuesta dinámica"
                 });
@@ -89,7 +89,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "ptb.png",
                     Description = "Sujeta al encaje en las áreas posteromedial y posterolateral, envuelve el muslo por encima de los epicóndilos y la rótula",
                     Title = "Correa suprancondilea"
                 });
@@ -99,7 +99,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "modular.png",
                     Description = "Se usan componentes intercambiables estandarizados hechos de aluminio o titanio",
                     Title = "Exoesquelético modular"
                 });
@@ -109,7 +109,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "lanzadera.png",
                     Description = "Se usa un liner con pin asegurado por una lanzadera en su parte inferior para mayor sujeción",
                     Title = "Pin y lanzadera"
                 });
@@ -119,7 +119,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "silicona.png",
                     Description = "Interface hecha de silicona",
                     Title = "Silicona"
                 });
@@ -129,7 +129,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "vacio.png",
                     Description = "Se usa en pacientes con buena musculatura y fuerza, ofrece mayor libertad de movimiento y comodidad (se adapta a la velocidad de la marcha)",
                     Title = "Válvula de vacío"
                 });
@@ -139,7 +139,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "copolimero.png",
                     Description = "Interface hecha de copolímero",
                     Title = "Copolímero"
                 });
@@ -149,7 +149,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "poliuretano.png",
                     Description = "Interface hecha de poliuretano",
                     Title = "Poliuretano"
                 });
@@ -159,7 +159,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "pie_dinamicong.png",
                     Description = "Pie articulado de respuesta dinámica alta",
                     Title = "Pie articulado"
                 });
@@ -169,7 +169,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "piealta.png",
                     Description = "Pie articulado de respuesta dinámica alta con resistencia alta, en carbono",
                     Title = "Pie articulado"
                 });
@@ -179,7 +179,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "carbono.png",
                     Description = "Diseño de contención isquiática (ovoidea)",
                     Title = "Fibra de carbono"
                 });
@@ -189,7 +189,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "policentrica.png",
                     Description = "Rodilla neumática o hidráulica con control de fluidos",
                     Title = "Policéntrica con control de fluidos"
                 });
@@ -199,7 +199,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "monocentrica.png",
                     Description = "Monocéntrica con control de fluidos y sistema rotatorio",
                     Title = "Monocéntrica con control de fluidos"
                 });
@@ -209,7 +209,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "pie.png",
                     Description = "Pie articulado de respuesta dinámica alta y resistencia moderada  (pie en carbono de alta resistencia y alto impacto para un K4)",
                     Title = "Pie articulado"
                 });
@@ -219,7 +219,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "monocentrica.png",
                     Description = "Hecha de aluminio o titanio",
                     Title = "Monocéntrica de freno a la carga"
                 });
@@ -228,7 +228,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "pie_dinamicong.png",
                     Description = "Pie articulado en carbono de respuesta dinámica media",
                     Title = "Pie articulado de respuesta dinámica"
                 });
