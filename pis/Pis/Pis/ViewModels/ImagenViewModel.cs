@@ -49,7 +49,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "sach.png",
+                    Image = "sach1.png",
                     Description = "Tobillo sólido con talón blando, unión perfecta entre pie y pierna debido a que no tiene articulaciones móviles",
                     Title = "Pie SACH"
                 });
@@ -79,7 +79,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "uno.png",
+                    Image = "ptb.png",
                     Description = "Encaje hecho de plástico laminado termoformado que proporciona una adaptación íntima sobre la superficie del muñón, incluyendo el extremo distal.",
                     Title = "Encaje de apoyo en el tendón rotuliano (PTB)"
                 });
@@ -89,7 +89,7 @@ namespace Pis.ViewModels
             {
                 this.Listai.Add(new ImagenesViewModel
                 {
-                    Image = "ptb.png",
+                    Image = "correasupra.png",
                     Description = "Sujeta al encaje en las áreas posteromedial y posterolateral, envuelve el muslo por encima de los epicóndilos y la rótula",
                     Title = "Correa suprancondilea"
                 });
